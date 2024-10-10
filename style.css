@@ -192,7 +192,7 @@ button:hover {
   .game-input {
     width: 100%;
   }
-  
+
   #result-numbers {
     display: grid;
     grid-template-columns: 1fr 1fr;
