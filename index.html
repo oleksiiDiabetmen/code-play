@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <title>Code Play</title>
+  </head>
+  <body>
+    <div class="wrapper flex">
+      <div class="inputs flex">
+        <div class="inputs-number-wrapper">
+          <label for="numberOne">Перше число:</label>
+          <input class="inputs-number" id="numberOne" type="number" />
+        </div>
+
+        <div class="inputs-number-wrapper">
+          <label for="numberTwo">Друге число:</label>
+          <input class="inputs-number" id="numberTwo" type="number" />
+        </div>
+
+        <div class="inputs-number-wrapper">
+          <label for="numberThree">Третє число:</label>
+          <input class="inputs-number" id="numberThree" type="number" />
+        </div>
+
+        <div class="inputs-number-wrapper">
+          <label for="numberFour">Четверте число:</label>
+          <input class="inputs-number" id="numberFour" type="number" />
+        </div>
+      </div>
+
+      <div class="game-form-wrapper flex">
+        <form id="form" class="game-input">
+          <div class="input-wrapper">
+            <input
+              class="input-input"
+              type="number"
+              id="number"
+              name="number"
+              autofocus
+            />
+            <label class="input-label" for="number">Напишіть число:</label>
+            <p class="warning">Кількість символів має бути 4</p>
+          </div>
+
+          <button class="send" type="submit">Відправити результат</button>
+        </form>
+
+        <div class="results">
+          <ul id="results-numbers" class="flex"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <h1 class="menu-header">Перемога!</h1>
+      <p class="menu-score">Правильне число: <span class="score"></span></p>
+      <p class="menu-score">Зроблено <span class="steps"></span> кроків!</p>
+      <button class="menu-button restart">Розпочати нову гру</button>
+      <button class="menu-button close-menu">Скрити меню</button>
+    </div>
+  </body>
+</html>
