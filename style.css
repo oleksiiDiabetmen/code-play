@@ -193,7 +193,7 @@ button:hover {
     width: 100%;
   }
 
-  #result-numbers {
+  #results-numbers {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
