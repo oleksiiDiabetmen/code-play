@@ -88,6 +88,7 @@ restart.addEventListener("click", () => {
     e.value = "";
   });
   resultNumbers.innerHTML = "";
+  stepsNum = 0;
   menu.classList.remove("active");
 });
 
